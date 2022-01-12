@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+    function sorteio(n) {
+        return Math.round(Math.random() * n);
+    }
+
+var numeroPensado = sorteio(500);
+var chute = parseInt(prompt("Digite seu chute de 0 a 500 e tente acertar o numero secreto!!"));
+
+if(chute == numeroPensado) {
+    mostra("Você acertou! " + numeroPensado);
+}
+if(chute > numeroPensado) {
+    mostra("Seu chute é maior do que o número secreto que era: " + numeroPensado);
+}
+
+if(chute < numeroPensado) {
+    mostra("Seu chute é menor do que o número secreto que era: " + numeroPensado);
+}
+
+if(chute > 500) {
+    mostra("O número tem que ser de 0 a 500 seu espertinho !!!");
+}
+//foi muito divertido essa atividade
+</script>
