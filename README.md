@@ -1,2 +1,2 @@
 # Alura-programming-logic
-exercises
+Exercises
